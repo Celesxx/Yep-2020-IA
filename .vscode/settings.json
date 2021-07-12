@@ -1,5 +1,6 @@
 {
     "jupyter.jupyterCommandLineArguments": [
         "--port=8890", "--ip=0.0.0.0", "--allow-root"
-    ]
+    ],
+    "jupyter.textOutputLimit": 0
 }
