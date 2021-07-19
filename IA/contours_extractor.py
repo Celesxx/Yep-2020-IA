@@ -58,13 +58,9 @@ for filename in os.listdir(input_filename):
         canvas = np.zeros_like(img)
         result = cv2.drawContours(canvas, contours, 0, color, 2, cv2.LINE_8, hierarchy, 2)
 
-
-    data = {"filename": filename, "contours" : result.tolist()}
-    with open(output_filename + "/" + filename_clear, "w") as out_f:
-        json.dump(data, out_f)
-
-
-
+        data = {"filename": filename, "contours" : result.tolist()}
+        with open(output_filename + "/" + filename_clear, "w") as out_f:
+            json.dump(data, out_f)
 
 
 
